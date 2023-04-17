@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <title> Calculating Refund </title>
+<body>
+
+    <script>
+        var refund ;
+        var fare =  prompt(" Kindly Enter your Fare");
+        let  time = prompt("Kindly Enter Your Time (in minutes)");
+        let refund_amount = countrefund(fare ,time) ;
+        
+
+        function countrefund(fare, time)
+        {
+
+            if (time<100)
+            {
+                return -1;
+            }
+            else if (time<=30)
+            {
+                return 0 ;
+
+            }
+            else if(time<=30 && time == 120)
+            {
+                return fare*0.1;
+                print("Your refund amount is ")
+            }
+            else if (time <= 120 && time <=300)  {
+                return fare*0.2;
+            }
+            else if( time <= 300 )
+            {
+                return fare*0.5;
+            }
+            else 
+            {
+                refund = Math.main(refund,100);
+                return refund;
+
+            }
+             
+        }
+        document.write(refund_amount);
+
+
+    </script>
+
+
+
+
+ </body>   
+   
+</html>
